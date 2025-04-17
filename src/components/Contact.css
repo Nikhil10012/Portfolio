@@ -1,0 +1,114 @@
+.contact_container {
+  height: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  padding: 30px; 
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+}
+.head{
+  font-size: 20px;
+  font-weight: 600;
+}
+.title{
+  margin-bottom: 20px;
+}
+/* Left Section */
+.column.left {
+  width: 48%;
+}
+
+.column.left .text {
+  font-size: 26px; 
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; 
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+.row .icon {
+  font-size: 24px; 
+  color: #6a0dad; 
+  margin-right: 15px; 
+}
+
+/* Right Section (Form) */
+.column.right {
+  width: 48%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .field,
+form .textarea {
+  margin-bottom: 20px; 
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s; 
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6a0dad; 
+  outline: none;
+}
+
+.button-area button {
+  width: 100%;
+  padding: 12px; 
+  background-color: #6a0dad;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-area button:hover {
+  background-color: #5a0cae; 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column.left, .column.right {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+}

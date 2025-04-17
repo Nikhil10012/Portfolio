@@ -1,0 +1,109 @@
+.Home_data{
+  margin-top:55px ;
+  background-image: url('../images/bg1.svg'); 
+   
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+ 
+  height: auto; 
+  color: white;
+  padding: 10%;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.intro-text{
+  color:burlywood;
+  font-size: 20px;
+  font-weight: 700;
+}
+.intro-text Span{
+  color:rgb(135, 222, 168);
+  font-size: 50px;
+  font-weight: 700;
+}
+.Hire_me{
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size:20px ;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Hire_me:hover{
+  background-color: rgba(171, 96, 241, 0.861);
+  color: white;
+  transform: scale(1.05);
+}
+.icon_link{
+  margin: 10px 0;
+  
+}
+.icon_link a{
+  text-decoration: none; 
+  color: inherit; 
+  
+}
+.icon_link .font-icon{
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.icon_link .font-icon:hover{
+  color: blueviolet;
+  
+  transform: scale(1.05);
+  
+}
+/* ===== Responsive Design for Smaller Screens ===== */
+@media screen and (max-width: 768px) {
+  .Home_data {
+    padding: 5%;
+    height: auto;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  .intro-text span {
+    font-size: 40px;
+  }
+
+  .Hire_me {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .icon_link .font-icon {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .intro-text span {
+    font-size: 35px;
+  }
+
+  .Hire_me {
+    font-size: 16px;
+    padding: 7px 12px;
+  }
+
+  .icon_link {
+    gap: 10px;
+  }
+
+  .icon_link .font-icon {
+    font-size: 22px;
+  }
+}

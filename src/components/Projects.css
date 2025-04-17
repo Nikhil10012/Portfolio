@@ -1,0 +1,78 @@
+/* ===== Project Container Styling ===== */
+.project_container {
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+}
+.project_heading {
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  font-size: 44px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.project_img_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+.project_card {
+  margin: 35px 15px;
+  width: 240px;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+.project_card img {
+  max-width: 100%;
+  border: 3px solid rgba(65, 105, 225, 0.541);
+  border-radius: 20px;
+}
+.project_name {
+  margin-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===== Hover Animation Effect ===== */
+.project_card:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Project Links (GitHub & Live Demo Buttons) ===== */
+.project_links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project_links a {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project_links a:hover {
+  background-color: #7d15b5;
+  transform: scale(1.05);
+}
+
+/* ===== Mobile Responsive Fix ===== */
+@media screen and (max-width: 768px) {
+  .project_card {
+    width: 200px;
+    height: auto;
+  }
+}
